@@ -14,7 +14,7 @@ func Read() string {
 
         fp, err = os.Open(infilepath)
         if err != nil {
-                panic(nil)
+                panic(err)
         }
         defer fp.Close()
 
